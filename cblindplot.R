@@ -16,11 +16,11 @@ cblind.plot(image_RGB, cvd = "tritanopia")
 remotes::install_github("ducciorocchini/imageRy")
 library(imageRy)
 
-map_path <- system.file("images/NDVI rainbow.png", package="imageRy")
+map_path <- system.file("images/NDVI_rainbow.png", package="imageRy")
 map <- terra::rast(map_path)
 terra::plotRGB(map)
 
-my_legend <- system.file("images/NDVI rainbow legend.png",package="imageRy")
+my_legend <- system.file("images/NDVI_rainbow_legend.png",package="imageRy")
 
 my_terra_legend <- terra::rast(my_legend)
 terra::plotRGB(my_terra_legend)
